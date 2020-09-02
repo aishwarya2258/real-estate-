@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.bg-success {
+  background-color: #71b100 !important;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .top-bar.bg-success {
+    background-color: transparent !important;
+  }
+
+  #header {
+    position: relative;
+  }
+
+  #header .top-bar {
+    position: absolute;
+    z-index: 1000;
+  }
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.navbar-brand strong {
+  font-weight: 900;
+}
+
+.navbar-nav .nav-link {
+  text-transform: uppercase;
+  color: #fff !important;
+  font-size: 0.8rem;
+}
+
+/* Dropdown */
+
+.dropdown-menu {
+  background-color: #71b100;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #e08709;
+}
+
+.btn-warning {
+  background-color: #e08709 !important;
+  color: #fff !important;
+}
+
+.btn-warning:hover {
+  background-color: #fcc652 !important;
+  color: #000 !important;
+}
+
+#contact {
+  background-image: url(../img/contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact .row {
+  height: 25rem;
+}
+
+#blog h3::after {
+  content: '';
+  display: block;
+  width: 8rem;
+  height: 0.2rem;
+  background-color: #71b100;
+  margin-top: 0.5rem;
+}
+
+.testimonials .carousel-item {
+  padding-left: 2rem;
+}
+
+.testimonials .testimonial {
+  position: relative;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+}
+
+.testimonials .testimonial:before {
+  content: open-quote;
+  font-size: 4rem;
+  position: absolute;
+  left: -2rem;
+  top: 0;
+  font-weight: 700;
+}
